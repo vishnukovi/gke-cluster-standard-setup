@@ -1,0 +1,64 @@
+# ── Terraform ─────────────────────────────────────────────────────────────────
+# Local .terraform directories and lock files
+**/.terraform/
+**/.terraform.lock.hcl
+
+# Terraform plan output files (may contain sensitive data)
+*.tfplan
+tfplan
+
+# State files — NEVER commit state to source control; use remote backends
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Variable files that may contain secrets
+*.tfvars.json
+# Uncomment if you use override files locally
+# override.tf
+# override.tf.json
+# *_override.tf
+# *_override.tf.json
+
+# Terraform CLI config file
+.terraformrc
+terraform.rc
+
+# ── GCP / Google Cloud ────────────────────────────────────────────────────────
+# Application Default Credentials (never commit!)
+gcp-credentials.json
+service-account-key.json
+*-sa-key.json
+*.p12
+
+# ── IDE / Editor ──────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# ── Secrets ───────────────────────────────────────────────────────────────────
+.env
+.env.*
+*.secret
+secrets/
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
